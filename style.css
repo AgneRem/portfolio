@@ -1,0 +1,281 @@
+body {
+  background-color: grey;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #722872;
+  color: #FFF;
+  padding: 0.5% 0;
+  border: 0;
+}
+
+.navbar-brand {
+  float: left;
+  padding: 0 15px 5px;
+}
+
+.navbar-header img {
+  max-height: 100%;
+}
+
+.navbar-default .navbar-nav li a {
+  color: white;
+  background-color: #722872;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar-default .navbar-nav li a:focus {
+  color: white;
+  background-color: #d3d3d3;
+}
+
+.navbar-default .navbar-nav li a:hover{
+  color: black;
+  background-color: #d3d3d3;
+  border-radius: 5px;
+}
+
+
+#profilePicture {
+  width:120px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.profile {
+  background-color: #aaa;
+  padding: 30px;
+  color: white;
+  margin-top: 50px;
+}
+
+/* Portfolio */
+
+#portfolio, #contacts {
+  background-color: lightgrey;
+  color: grey;
+  padding-top: 40px;
+}
+
+#about {
+  padding-top: 40px;
+}
+
+.portfolioItem {
+  text-align: center;
+}
+
+.portfolioItem img {
+  padding: 25px;
+}
+
+/* End of Portfolio */
+
+/* Contacts*/
+
+#contacts {
+  margin-top: -20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+  margin-left: 40px;
+  margin-right: 60px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+
+
+/* form starting stylings ------------------------------- */
+.group {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+input {
+    font-size: 18px;
+    padding: 5px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid grey;
+    background: transparent;
+}
+
+    input:focus {
+        outline: none;
+    }
+
+/* LABEL ======================================= */
+label {
+    color: grey;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: grey;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+    .bar:before, .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: grey;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+        left: 50%;
+    }
+
+    .bar:after {
+        right: 50%;
+    }
+
+
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #fff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #fff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #fff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+
+#panel {
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%); /* Standard syntax (must be last) */
+
+
+    border-radius: 4px;
+    top: 50px;
+}
+
+#contacts h3 {
+  margin-bottom: 40px;
+}
+
+#contacts p {
+  margin-right: 30px;
+  text-align: justify;
+}
+
+/* Footer */
+
+footer {
+  color: white;
+  background-color: #aaa;
+  margin-left: 0;
+  padding-top: 20px;
+}
+
+.social i {
+  margin: 7px;
+  font-size: 1.2em;
+  border: 2px solid white;
+  padding: 7px;
+  border-radius: 50%;
+  color: white;
+}
+
+.bottom {
+  background-color: #722872;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.social i:hover {
+  background-color: white;
+  color: #722872;
+}

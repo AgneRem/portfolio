@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+        $("li").click(function() {
+          $('li').removeClass('active');
+          $(this).addClass('active');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="text-center profile"  id="about">
+        <div class="row">
+          <div class="col-md-9 text-left">
+            <h3>Hi,</h3>
+            <h3>My name is Agne,</h3>
+            <h3>I am web developer.</h3>
+            <p>Front-End Developer / Web developer / Wordpress</p>
+          </div>
+          <div class="col-md-3">
+            <img src="img/profile.jpg" alt="Profile picture" class="img-responsive" id="profilePicture">
+          </div>
+        </div>
+      </div>
+
+      <!-- Start of portfolio -->
+    <section id="portfolio">
+      <div class="container-fluid text-center">
+        <h3>PORTFOLIO</h3>
+        <div class="row">
+          <div class="col-md-6 portfolioItem">
+            <a href="#"><img src="img/bookstore.jpg" alt="Portfolio example" class="img-responsive"></a>
+          </div>
+          <div class="col-md-6 portfolioItem">
+            <a href="#"><img src="img/bookstore.jpg" alt="Portfolio example" class="img-responsive"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 portfolioItem">
+            <a href="#"><img src="img/bookstore.jpg" alt="Portfolio example" class="img-responsive"></a>
+          </div>
+          <div class="col-md-6 portfolioItem">
+            <a href="#"><img src="img/bookstore.jpg" alt="Portfolio example" class="img-responsive"></a>
+          </div>
+        </div>
+      </div>
+    <hr>
+    </section>
+    <!-- End of Portfolio -->
+
+    <!-- Contact form -->
+
+    <section id="contacts">
+      <div class="container text-center">
+        <h3>CONTACT ME</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Name</label>
+            </div>
+            <div class="group">
+              <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Email</label>
+            </div>
+            <div class="group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Mobile No</label>
+            </div>
+            <div class="group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Message</label>
+            </div>
+            <div class="group">
+                <center> <button type="submit" class="btn btn-primary">Send <span class="glyphicon glyphicon-send"></span></button></center>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume just feel free to drop me a line anytime.
+I promise to reply A.S.A.P.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Contact -->
+
+
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6">
+            <h4>ABOUT THIS PAGE</h4>
+            <p>Made with <i class="fa fa-coffee" aria-hidden="true"></i> and <i class="fa fa-music" aria-hidden="true"></i></p>
+            <p>by Agne Remeikyte</p>
+          </div>
+          <div class="col-md-6">
+            <h4>AROUND THE WEB</h4>
+            <p class="social">
+              <a href="https://www.linkedin.com/in/agne-remeikyte"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="https://github.com/AgneRem"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="container text-center">
+          <p> © 2018 All Rights Reversed</p>
+        </div>
+
+      </div>
+
+    </footer>
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
